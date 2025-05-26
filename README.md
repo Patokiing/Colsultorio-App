@@ -115,6 +115,13 @@ php artisan serve
 npm install
 npm start
 
+## ⚠️ Aviso Legal
+
+Este proyecto fue desarrollado por **Patrick Pueblita** como parte de su portafolio profesional.
+
+Está prohibido su uso comercial o la reproducción total/parcial sin autorización previa del autor.  
+Para más información o colaboración, contacta: patrickpueb@gmail.com
+
 
 
 
