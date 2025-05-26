@@ -122,6 +122,10 @@ Este proyecto fue desarrollado por **Patrick Pueblita** como parte de su portafo
 Está prohibido su uso comercial o la reproducción total/parcial sin autorización previa del autor.  
 Para más información o colaboración, contacta: patrickpueb@gmail.com
 
+## Licencia
+
+Este proyecto está licenciado bajo los términos de la [Licencia MIT](LICENSE).
+
 
 
 
