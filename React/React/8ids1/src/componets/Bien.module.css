@@ -1,0 +1,393 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor para alinear logo y MEDICONNECT juntos */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilo para MEDICONNECT al lado del logo */
+.mediconnect-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem; /* Tamaño más grande */
+  font-weight: 700;
+  color: #2a9d8f;
+}
+
+/* Estilo centrado para "Centro Médico Integral" */
+.centro-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* Más grande y visible */
+  font-weight: 600;
+  color: #264653;
+  text-align: center;
+  flex: 1; /* Ocupa espacio para centrar el texto */
+}
+
+/* Ajustes adicionales si es necesario */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  padding: 10px 40px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.logo {
+  height: 60px;
+}
+
+
+/* Contenedor de los botones */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+
+
+/* Página */
+.bien-page {
+  background: url('/public/img/coo.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh; /* Se asegura de ocupar toda la altura de la pantalla */
+  border: 2px solid transparent; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Encabezado */
+.header-container {
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+  padding: 10vh 5vw; /* Padding adaptable al tamaño de pantalla */
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(0px); /* Efecto de desenfoque para un look moderno */
+  border-radius: 20px;
+  margin-top: calc(70px + 2vh); /* Espacio dinámico para la barra superior */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-content h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Tamaño de fuente responsivo */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+}
+
+.header-content p {
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Tamaño de fuente responsivo */
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  opacity: 0.9;
+  color: white;
+}
+.header-image img {
+  max-width: 400px; /* La imagen no superará los 400px de ancho */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 8vh 5vw;
+    margin-top: calc(60px + 1vh); /* Ajuste menor para móviles */
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Ajuste para evitar superposición con la top-bar */
+.top-bar + .header-container {
+  margin-top: 100px;
+}
+
+
+
+
+
+/* Pie de Página */
+
+/* Pie de Página */
+.footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  box-shadow: none; /* Eliminar la sombra */
+  border-top: none; /* Asegurarse de que no haya un borde superior */
+  backdrop-filter: none; /* Eliminar el efecto borroso */
+  font-family: 'Arial', sans-serif; /* Cambiar la fuente */
+}
+/* Añade esto a tu CSS */
+.footer-copyright p {
+  color: white; /* Asegura que el párrafo sea blanco */
+  margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+
+/* Otros estilos del footer */
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centra los íconos en el contenedor */
+  align-items: center;
+}
+
+.footer-social-icon {
+  width: 30px; /* Tamaño de los íconos */
+  height: 30px;
+  transition: transform 0.3s ease;
+  margin: 0 15px; /* Aumenta el margen entre los íconos */
+}
+
+.footer-social-icon:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center; /* Centrar los enlaces */
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: white; /* Color gris para el texto de copyright */
+}
+
+.footer-img {
+  display: none; /* Eliminar la imagen del footer */
+}
+.footer-section a {
+  color: white;
+  text-decoration: none; /* Opcional: para quitar el subrayado */
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* Opcional: para resaltar al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+/* Botones de la barra superior */
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #089da4;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+
+
+
+/* Ajuste para evitar que la barra superior tape contenido */
+.header-container {
+  margin-top: 50px;
+}
+
+
+
+
+/* From Uiverse.io by eslam-hany */ 
+.card-container {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: black;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .front-content img {
+  width: 60%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card .front-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(-45deg, #089da4 0%, #ff0f7b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #089da4 0%, #ff0f7b 100%);
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+.card:hover .front-content {
+  transform: translateY(30%);
+}
+
+.card:hover .front-content h3,
+.card:hover .front-content img {
+  opacity: 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Estilo para el título de Especialidades */
+.especialidades-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.especialidades-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black; /* Puedes elegir el color que más te guste */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-text ul {
+  list-style: none; /* Quita los puntos */
+  padding-left: 0;  /* Elimina el espacio a la izquierda */
+}
+
+
+/* Estilos específicos para la alineación del texto en Política de Privacidad */
+.alineado-texto {
+  text-align: justify; /* Justificar el texto */
+  padding: 20px;        /* Espaciado interno */
+  margin: 0 auto;       /* Centrar el contenedor */
+  width: 90%;           /* Ancho del contenedor */
+  max-width: 900px;     /* Limitar el ancho máximo */
+  line-height: 1.8;     /* Aumentar la altura de línea para mejorar la legibilidad */
+}
+
+
